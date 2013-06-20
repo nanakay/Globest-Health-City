@@ -1,0 +1,57 @@
+<?php
+	session_start();
+	
+	include("includes/db_connect.php");
+	
+	if(isset($_POST['submit'])){
+		$error= array();
+		
+		//username
+		if(empty($_POST['username'] and $_POST['password'])){
+				$error[]='please enter a valid username and a password. ';
+		}	else() {
+				$username = $_POST['username'];
+				$password = $_POST['password'];
+				$result = mysql_query("SELECT * FROM users WHERE username=$username and password=$password") or die(mysql_error();
+					if (mysql_num_rows($result)!=0) {
+						# code...
+						echo "Log user in";
+					}else(){
+						$error[] = 'Please there is no such user currently. Just register at (link to my sign up page)';
+					}
+		} 	
+	}	
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>User Registration</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/forms.css">
+	<link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+	<div id="wrapper">
+		<aside id="left_side">
+			<h3>Put the logo of globest here</h3>
+			<img src="../images/logo.png" alt="there shoud be registration banner" />
+		</aside>
+		<section id="right_side">
+			<form id="sign_up_form" class="container" method="post" action="">
+				<h3>Log In</h3>
+				<div class="field">
+					<label for="username">username:</label>
+					<input type="text" class="input" id="username" name="username" maxlength="20" />
+					<p class="hint">Provide the user name you registered with</p>
+				</div>
+				<div class="field">
+					<label for="password">Password:</label>
+					<input type="password" class="input" id="password" name="password" maxlength="20" />
+				</div>
+				<input type="submit" class="buttons" name="submit" id="submit" value="Log In" />
+			</form>
+		</section>
+	</div>
+</body>
+<html>

@@ -1,0 +1,21 @@
+#left_side{
+	width:470px;
+	margin-top:10px;
+	margin-right:10px;
+	float:left;
+}
+#right_side{
+	margin-top:10px;
+	float:left;
+	width:520px;
+}
+.container{
+	width:460px;
+}
+.input{
+	width:300px;
+}
+.field:hover .hint{
+	margin:-30px 0 0 450px;
+}
+
