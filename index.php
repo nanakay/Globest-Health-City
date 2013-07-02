@@ -47,26 +47,20 @@
             </div>
 
             <div id = "signup" >
-              <a href = "sign_up.html" ><img id = "signup_btn" src = "images/signup.png" ></a>
+              <a href = "signup.php" ><img id = "signup_btn" src = "images/signup.png" ></a>
 
               <ul>
-                <li><a href = "" ><img class = "icons" src = "images/doctor.png" >For Online Consultancy</a><li>
-                <li><a href = "" ><img class = "icons" src = "images/appointment.png" >To Book An Appointment</a><li>
-                <li><a href = "" ><img class = "icons" src = "images/store2.png" >To Buy From Our Store</a><li>
-                <li><a href = "" ><img class = "icons" src = "images/community.png" >To Join Our Community</a><li>
+                <li><a href = "" ><img class = "icons" src = "images/doctor.png" ><span>For Online Consultancy</span></a><li>
+                <li><a href = "" ><img class = "icons" src = "images/appointment.png" ><span>To Book An Appointment</span></a><li>
+                <li><a href = "" ><img class = "icons" src = "images/store2.png" ><span>To Buy From Our Store</span></a><li>
+                <li><a href = "" ><img class = "icons" src = "images/community.png" ><span>To Join Our Community</span></a><li>
               </ul>
             </div>
          </div>
 
-         
-
          <div id="about_us">
             <h4>ABOUT US</h4>
-            At globest health city, living a healthy life is our priority. As a result we provide our
-            Customers' state of the art facilities. Couple to that is our health professionals
-            who have worked in several conutries to save life. So, at Globest,
-            your life will be worth living every single second.
-            We are the number one health management hospital in Accra.  <a class="button-2" href="what_we_are.php">Read More</a>
+            We offer science-based, research-validated, medically proven, sensible, flexible, realistic, targeted and natural weight loss program. Our weight management service is among the best in the world and it is well structured, step by step, with our experts going every step with you to ensure that you succeed.  <a class="button-2" href="what_we_are.php">Read More</a>
          </div>
          
     </div>
@@ -94,7 +88,12 @@
             <div class="wrapper prev-indent-bot">
               <figure class="img-indent2"><img src="images/goodfood.jpg" alt=""></figure>
               <div class="extra-wrap">
-                 We offer science-based, research-validated, medically proven, sensible, flexible, realistic, targeted and natural weight loss program. Our weight management service is among the best in the world and it is well structured, step by step, with our experts going every step with you to ensure that you succeed. Scientifically and emotionally we understand your weight problem and therefore we understand the solution. Therefore our clients stay motivated and focused as they lose and maintain healthy weight.
+                 <h6 class="p1">
+                 We are what we eat
+                </h6>
+                Eating habits are the most important factors determinig the health of human beings. However, most of as rarely pay attention that.
+                So, we are what we eat. As a result globest recommend the best eating habits to different individuals with regards to
+                their health conditions. Our routine check up will ensure that patients monitor their health progress and ways to improve it.
                 </div>
             </div>
             <p class="prev-indent-bot">With our vision of giving our clients a complete good health, we offer advice on <a class="link" href="nutrition1.php">nutrition.</a>, <a class="link" href="weight_management.php">We help 

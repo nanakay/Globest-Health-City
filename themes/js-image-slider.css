@@ -25,7 +25,7 @@ background:url(ribbon.png) no-repeat;z-index:7;}
 #slider img {
     width: 500px;
 	height:300px;
-	position:absolute;
+	position:relative;
 	border:none;
 	display:none;
 }

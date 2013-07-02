@@ -52,18 +52,19 @@
 					if(!$result2){
 						die('Choud not insert into database: '.mysql_error());
 					}else {
-						echo "You have succesfully sign up";
-			}else{
-				header('Location:promt.php?x=2');
-			}
+						echo "You have succesfully signed up";
+					}
+			
+		}else{
+			 	header('Location:promt.php?x=2');
+			 }
 		}else{
 			$error_message ='<span class="error">' ;
 				foreach($error as $key => $values) {
 					$error_message.= "$values";
 				}
 			$error_message.="</span> <br/><br/>";
-		}
-	}	
+		}	
 ?>
 
 <!DOCTYPE html>
@@ -78,6 +79,7 @@
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">-->
 </head>
 <body>
+	<div class = "bg" >
 	<?php include 'includes/header.php';?>
 	<div id="wrapper">
 		<!--<aside id="left_side">
@@ -120,5 +122,6 @@
 			</form>
 		</section>
 	</div>
+	</div>
 </body>
-<html>
+</html>
